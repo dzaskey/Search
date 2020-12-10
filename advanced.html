@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    div.top-right {
-    position: relative;
-    right: 0;
-} 
-</style>    
+    <style>
+        div.a {
+          position: relative;
+        }
+        
+        div.top-right {
+          position: absolute;
+          right: 0;
+        } 
+        </style>          
 
 <head>
+    <div class="a">
         <title>Google Advanced Search</title>
     </head>
     <body>
-      <div class="top-right">
+        
+        <div class="top-right">
           <a href="https://dzaskey.github.io/Search/index.html">Google Search</a>
           <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
-        </div>
+         </div>
       <h1>Google Advanced Search</h1>
       <form action="https://google.com/search">
         Find pages with: <br>
@@ -33,6 +39,7 @@
         <input type="hidden" name="as_filetype" value="">
         <input type="hidden" name="tbs" value="">    
         <input type="submit" value="Advanced Search" aria-label="Advanced Search">
-    </form>
+      </form>
+    </div>
     </body>
 </html>
