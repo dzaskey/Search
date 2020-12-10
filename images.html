@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-    
+<html lang="en"> 
     <style>
+        div.a {
+          position: relative;
+        }      
         div.top-right {
-        position: absolute;
-        right: 0;
-        width: 100px;
-        height: 120px;
-        border: 3px solid blue;
-    } 
-    </style>
-    
+          position: absolute;
+          right: 0;
+        } 
+        </style>   
     <head>
         <title>Search</title>
     </head>
     <body>
-        <a href="https://dzaskey.github.io/Search/index.html">Google Search</a> 
-        <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
-        <h1>Google Image Search</h1>
-        <form action="https://google.com/search">
-            <input type="hidden" name="tbm" value="isch">
-            <input type="text" name="q">
-            <input type="submit" value="Image Search" aria-label="Google Image Search">
-        </form>
+        <div class="a">
+            <div class="top-right">
+                <a href="https://dzaskey.github.io/Search/index.html">Google Search</a> 
+                <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
+            </div>
+            <h1>Google Image Search</h1>
+            <form action="https://google.com/search">
+                <input type="hidden" name="tbm" value="isch">
+                <input type="text" name="q">
+                <input type="submit" value="Image Search" aria-label="Google Image Search">
+            </form>
+        </div>
     </body>
 </html>
