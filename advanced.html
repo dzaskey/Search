@@ -17,7 +17,7 @@
           margin: auto;
           width: 50%;
         } 
-
+/*
         form {
             padding: 10px; 
         }
@@ -30,8 +30,21 @@
         color: white; 
         background-color: rgba(53, 98, 245, 0.705); 
         border-radius: 5px} 
+*/
+        .grid {
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: 200px 200px auto;
+            }
 
-        </style>          
+        .grid-item {
+                font-size: 15px;
+                padding: 10px;
+                text-align: center;
+        }
+    </style>          
     <head>
         <title>Google Advanced Search</title>
     </head>
@@ -44,24 +57,25 @@
             </div>
             <div class="centre-search">
                 <h1>Google Advanced Search</h1>
-                <form action="https://google.com/search">
-                    Find pages with: <br>
-                    all these words: <input type="text" name="as_q"><br>
-                    this exact word or phrase: <input type="text" name="as_epq"><br>
-                    any of these words: <input type="text" name="as_oq"><br> 
-                    none of these words: <input type="text" name="as_eq"><br>
-                    <input type="hidden" name="as_nlo" value="">
-                    <input type="hidden" name="as_nhi" value="">
-                    <input type="hidden" name="cr" value="">
-                    <input type="hidden" name="as_qdr" value="all">
-                    <input type="hidden" name="as_sitesearch" value="">
-                    <input type="hidden" name="as_occt" value="any">
-                    <input type="hidden" name="safe" value="images">
-                    <input type="hidden" name="as_filetype" value="">
-                    <input type="hidden" name="tbs" value="">    
-                    <input type="submit" value="Advanced Search" aria-label="Advanced Search", color: blue>
-                </form>
+                <div class="grid">
+                    <form action="https://google.com/search">
+                        Find pages with:
+                        <div class="grid-item">all these words:</div>
+                        <div class="grid-item">
+                            <input type="text" name="as_q"></div>
+                        <div class="grid-item">this exact word or phrase:</div>
+                        <div class="grid-item">
+                            <input type="text" name="as_epq"></div>
+                        <div class="grid-item">any of these words:</div>
+                        <div class="grid-item">
+                            <input type="text" name="as_oq">/div>
+                        <div class="grid-item">none of these words:</div>
+                        <div class="grid-item">
+                            <input type="text" name="as_eq"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
 </html>
+
