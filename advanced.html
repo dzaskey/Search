@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    
     <style>
         *{font-family: sans-serif
         }
@@ -13,21 +17,15 @@
             padding: 20px;
             text-align: center;
         }
-/*
-        form {
-            padding: 10px; 
-        }
-        input[type="text"]
-        {font-size: 15px; 
-        border-radius: 5px} 
-*/
+
         input[type="submit"]
         {font-size: 15px; 
         color: white; 
         background-color: rgba(53, 98, 245, 0.705); 
         border-radius: 5px} 
 
-        .grid {
+       /* 
+       .grid {
             display: grid;
             padding: 20px;
             grid-column-gap: 10px;
@@ -39,7 +37,8 @@
                 font-size: 15px;
                 padding: 10px;
                 text-align: center;
-        }   
+        }
+        */   
     </style>          
     
     <head>
@@ -55,31 +54,32 @@
         </div>
 
         <div class="centre">
-            
             <h1>Google Advanced Search</h1>
             Find pages with:
             <form action="https://google.com/search">
-                <div class="grid">
-                    <div class="grid-item">
-                        all these words:</div>
-                    <div class="grid-item">
-                        <input type="text" name="as_q"></div>
-                    <div class="grid-item">
-                        this exact word or phrase:</div>
-                    <div class="grid-item">
-                        <input type="text" name="as_epq"></div>
-                    <div class="grid-item">
-                        any of these words:</div>
-                    <div class="grid-item">
-                        <input type="text" name="as_oq"></div>
-                    <div class="grid-item">
-                        none of these words:</div>
-                    <div class="grid-item">
-                        <input type="text" name="as_eq"></div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col">all these words:</div>
+                        <div class="col"><input type="text" name="as_q"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">this exact word or phrase:</div>
+                        <div class="col"><input type="text" name="as_epq"></div>
+                        </div>
+                    <div class="row">
+                        <div class="col">any of these words:</div>
+                        <div class="col"><input type="text" name="as_oq"></div>
+                        </div>
+                    <div class="row">
+                        <div class="col">none of these words:</div>
+                        <div class="col"><input type="text" name="as_eq"></div>
+                        </div>
                 </div>
                 <input type="submit" value="Advanced Search" aria-label="Advanced Search">
             </form>
         </div>
     </body>
+    
 </html>
 
