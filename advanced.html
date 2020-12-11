@@ -2,21 +2,17 @@
 <html lang="en">
     <style>
         *{font-family: sans-serif
-        }    
-        .container {
-        position: relative;
-}
-        div.top-right {
-          position: absolute;
-          right: 0;
-          padding-right: 30px;
-        } 
-        div.centre-search {
-          position: relative;
-          padding-top: 30px;
-          margin: auto;
-          width: 50%;
-        } 
+        }
+        /* Style the header */
+        .header {
+            padding: 30px;
+            text-align: right;
+            }
+        /* Style the header */
+        .centre {
+            padding: 20px;
+            text-align: center;
+        }
 /*
         form {
             padding: 10px; 
@@ -34,9 +30,9 @@
         .grid {
             display: grid;
             padding: 20px;
-            grid-column-gap: 20px;
+            grid-column-gap: 10px;
             grid-row-gap: 10px;
-            grid-template-columns: 200px 200px auto;
+            grid-template-columns: auto auto;
             }
 
         .grid-item {
@@ -45,49 +41,41 @@
                 text-align: center;
         }
     </style>          
+    
     <head>
         <title>Google Advanced Search</title>
     </head>
+
     <body>
-        <div class="a" >
-            <div class="top-right">
-                <a href="https://dzaskey.github.io/Search/index.html">Google Search</a>
-                &nbsp;&nbsp;
-                <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
-            </div>
-            <div class="centre-search">
-                <h1>Google Advanced Search</h1>
-                    <form action="https://google.com/search">
-                    <div class="grid">
-                        Find pages with:
-                        <div class="grid-item">all these words:</div>
-                        <div class="grid-item">
-                            <input type="text" name="as_q"></div>
-                        <div class="grid-item">this exact word or phrase:</div>
-                        <div class="grid-item">
-                            <input type="text" name="as_epq"></div>
-                        <div class="grid-item">any of these words:</div>
-                        <div class="grid-item">
-                            <input type="text" name="as_oq"></div>
-                        <div class="grid-item">none of these words:</div>
-                        <div class="grid-item">
-                            <input type="text" name="as_eq"></div>
-                    </div>
-                    <input type="submit" value="Advanced Search" aria-label="Advanced Search">
-                    </form>
-            </div>
+       
+        <div class="header">
+            <a href="https://dzaskey.github.io/Search/index.html">Google Search</a>
+            &nbsp;&nbsp;
+            <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
+        </div>
+
+        <div class="centre">
+            
+            <h1>Google Advanced Search</h1>
+
+            <form action="https://google.com/search">
+                <div class="grid">
+                    Find pages with:
+                    <div class="grid-item">all these words:</div>
+                    <div class="grid-item">
+                        <input type="text" name="as_q"></div>
+                    <div class="grid-item">this exact word or phrase:</div>
+                    <div class="grid-item">
+                        <input type="text" name="as_epq"></div>
+                    <div class="grid-item">any of these words:</div>
+                    <div class="grid-item">
+                        <input type="text" name="as_oq"></div>
+                    <div class="grid-item">none of these words:</div>
+                    <div class="grid-item">
+                        <input type="text" name="as_eq"></div>
+                </div>
+                <input type="submit" value="Advanced Search" aria-label="Advanced Search">
+            </form>
         </div>
     </body>
 </html>
-
-/*
-<input type="hidden" name="as_nlo" value="">
-<input type="hidden" name="as_nhi" value="">
-<input type="hidden" name="cr" value="">
-<input type="hidden" name="as_qdr" value="all">
-<input type="hidden" name="as_sitesearch" value="">
-<input type="hidden" name="as_occt" value="any">
-<input type="hidden" name="safe" value="images">
-<input type="hidden" name="as_filetype" value="">
-<input type="hidden" name="tbs" value=""> 
-*/
