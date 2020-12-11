@@ -3,32 +3,35 @@
     <style>
         *{font-family: sans-serif
         }
-        div.a {
-          position: relative;
-          padding: 30px;
-        }      
-        div.top-right {
-          position: absolute;
-          right: 0;
-          padding-right: 30px;
-          } 
+        /* Style the header */
+        .header {
+            padding: 30px;
+            text-align: right;
+            }
+        /* Style the header */
+        .centre {
+            padding: 20px;
+            text-align: center;
+}  
     </style>   
 
     <head>
         <title>Search</title>
     </head>
     <body> 
-        <div class="a">
-            <div class="top-right">
-                <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
-                &nbsp;&nbsp;
-                <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
-            </div>
+        <div class="header">
+            <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
+            &nbsp;&nbsp;
+            <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
+        </div>
+        <div class="centre">
             <h1>Google Search</h1>
             <form action="https://google.com/search">
                 <input type="text" name="q"> <br>
                 <input type="submit" value="Google Search" aria-label="Google Search">
-                <input type="submit" value="I'm Feeling lucky" aria-label="Google Search" jsaction="sf.lck">
+                <input type="submit" value="I'm Feeling lucky" 
+                aria-label="Google Search" jsaction="sf.lck">
             </form>
+        </div>
     </body>
 </html>
