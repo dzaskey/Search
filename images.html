@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <style>
-        *{font-family: sans-serif
+               *{font-family: sans-serif
         }
-        div.a {
-          position: relative;
-          padding: 30px
-        }      
-        div.top-right {
-          position: absolute;
-          right: 0;
-          padding-right: 30px
-        } 
-        div.centre-search {
-          position: absolute;
-          margin: auto
-        } 
+        /* Style the header */
+        .header {
+            padding: 30px;
+            text-align: right;
+            }
+        /* Style the header */
+        .centre {
+            padding: 20px;
+            text-align: center;
+        }
+        input[type="submit"]
+        {font-size: 15px; 
+        border-radius: 5px} 
         </style>   
     <head>
         <title>Search</title>
     </head>
     <body>
-        <div class="a">
-            <div class="top-right">
-                <a href="https://dzaskey.github.io/Search/index.html">Google Search</a> 
-                &nbsp;&nbsp;
-                <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
-            </div>
+        <div class="header">
+            <a href="https://dzaskey.github.io/Search/index.html">Google Search</a> 
+            &nbsp;&nbsp;
+            <a href="https://dzaskey.github.io/Search/advanced.html">Google Advanced Search</a>
+        </div>
+        <div class="centre">
             <h1>Google Image Search</h1>
             <form action="https://google.com/search">
                 <input type="hidden" name="tbm" value="isch">
@@ -34,5 +34,6 @@
                 <input type="submit" value="Image Search" aria-label="Google Image Search">
             </form>
         </div>
+
     </body>
 </html>
