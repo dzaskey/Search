@@ -17,12 +17,18 @@
           margin: auto;
           width: 50%;
         } 
+        input[type="text"]
+        {font-size: 15px; 
+        padding: 5px; 
+        border-radius: 5px} 
+        
         input[type="submit"]
         {font-size: 15px; 
         color: white; 
         background-color: rgba(53, 98, 245, 0.705); 
         padding: 5px; 
         border-radius: 5px} 
+
         </style>          
     <head>
         <title>Google Advanced Search</title>
@@ -36,15 +42,11 @@
             </div>
             <div class="centre-search">
                 <h1>Google Advanced Search</h1>
-                <form action="https://google.com/search"; style="margin: auto">
-                    Find pages with: <br>
-                    &nbsp;
+                <form action="https://google.com/search">
+                    Find pages with: <br> &nbsp;
                     all these words: <input type="text" name="as_q"><br>
-                    &nbsp;
                     this exact word or phrase: <input type="text" name="as_epq"><br>
-                    &nbsp;
-                    any of these words: <input type="text" name="as_oq"><br>
-                    &nbsp;
+                    any of these words: <input type="text" name="as_oq"><br> 
                     none of these words: <input type="text" name="as_eq"><br>
                     <input type="hidden" name="as_nlo" value="">
                     <input type="hidden" name="as_nhi" value="">
