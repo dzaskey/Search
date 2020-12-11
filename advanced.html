@@ -6,12 +6,13 @@
           padding: 30px;
         }      
         div.top-right {
-          position: relative;
+          position: absolute;
           right: 0;
           padding-right: 30px;
         } 
         div.centre-search {
           position: relative;
+          padding-top: 30px;
           margin: auto;
           width: 40%;
         } 
@@ -30,9 +31,13 @@
                 <h1>Google Advanced Search</h1>
                 <form action="https://google.com/search">
                     Find pages with: <br>
+                    &nbsp;
                     all these words: <input type="text" name="as_q"><br>
+                    &nbsp;
                     this exact word or phrase: <input type="text" name="as_epq"><br>
+                    &nbsp;
                     any of these words: <input type="text" name="as_oq"><br>
+                    &nbsp;
                     none of these words: <input type="text" name="as_eq"><br>
                     <input type="hidden" name="as_nlo" value="">
                     <input type="hidden" name="as_nhi" value="">
