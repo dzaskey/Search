@@ -21,11 +21,6 @@
         border-radius: 5px;
         float: right;
         }
-        
-        #RowTitle{
-            text-align: center;
-            }
-
     </style>          
     
     <head>
@@ -39,33 +34,31 @@
             &nbsp;&nbsp;
             <a href="https://dzaskey.github.io/Search/images.html">Google Image Search</a>
         </div>
-
-        
+ 
         <h1 >Google Advanced Search</h1>
-
         <h2>Find pages with:</h2>
 
-        <form action="https://google.com/search">    
-            <div class="container"></div>
-                <div class="row justify-content-start">
-                    <div class="col" id="RowTitle">all these words:</div>
-                    <div class="col" id="RowTitle"><input type="text" name="as_q"></div>
-                    </div>
-                <div class="row justify-content-start">
-                    <div class="col" id="RowTitle">this exact word or phrase:</div>
-                    <div class="col"><input type="text" name="as_epq"></div>
-                    </div>
-                <div class="row justify-content-start">
-                    <div class="col" id="RowTitle">any of these words:</div>
-                    <div class="col"><input type="text" name="as_oq"></div>
-                    </div>
-                <div class="row justify-content-start">
-                    <div class="col" id="RowTitle">none of these words:</div>
-                    <div class="col"><input type="text" name="as_eq"></div>
-                    </div>
-                <input type="submit" value="Advanced Search" aria-label="Advanced Search">
-            </div>
-            
+        <form action="https://google.com/search"> 
+            <table>
+                <tbody>
+                    <tr>
+                    <td>all these words:</td>
+                    <td><input type="text" name="as_q"></td>
+                    </tr>
+                    <tr>
+                    <td>this exact word or phrase:</td>
+                    <td><input type="text" name="as_epq"></td>
+                    <tr>
+                    <td>any of these words:</td>
+                    <td><input type="text" name="as_oq"></td>
+                    </tr>
+                    <tr>
+                    <td>none of these words:</td>
+                    <td><input type="text" name="as_eq"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="Advanced Search" aria-label="Advanced Search">  
         </form>
     </body>
 
